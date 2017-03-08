@@ -1,13 +1,12 @@
-Contributing Guidelines
---------------------------------------------------
+# Contributing Guidelines
 
 This document provides general guidelines about how to contribute to the project. Keep in mind these important things before you start contributing.
 
-### Asking Questions
+## Asking Questions
 
 We do not use github issues for general library support. We think this questions should be posted on stack overflow using [BuildSlackNotifier](http://http://stackoverflow.com/questions/tagged/buildslacknotifier) tag.
 
-### Reporting issues
+## Reporting issues
 
 * Use [github issues](https://github.com/xmartlabs/BuildSlackNotifier/issues) to report a bug.
 * Before creating a new issue:
@@ -15,7 +14,7 @@ We do not use github issues for general library support. We think this questions
   * Check if the issue was [already reported or fixed](https://github.com/xmartlabs/BuildSlackNotifier/issues?utf8=%E2%9C%93&q=is%3Aissue). Notice that it may not be released yet.
   * If you found a match add a brief comment "I have the same problem" or "+1". This helps prioritize the issues addressing the most common and critical first. If possible add additional information to help us reproduce and fix the issue. Please use your best judgement.    
 
-### Pull requests
+## Pull requests
 
 The easiest way to start contributing is searching open issues by `help wanted` tag. We also add a `difficulty` tag (difficulty: easy, difficulty: moderate, difficulty: hard) in order to give an idea of how complex it can be to implement the feature according maintainers project experience.
 
@@ -25,7 +24,7 @@ The easiest way to start contributing is searching open issues by `help wanted` 
 * Please only one fix or feature per pull request. This will increase the chances your feature will be merged.
 
 
-###### Suggested git workflow to contribute
+### Suggested git workflow to contribute
 
 1. Fork the BuildSlackNotifier repository.
 2. Clone your forked project into your developer machine: `git clone git@github.com:<your-github-username>/BuildSlackNotifier.git`
@@ -39,7 +38,7 @@ The easiest way to start contributing is searching open issues by `help wanted` 
 10. Create a new pull request adding any useful comment.
 
 
-###### Code style and conventions
+### Code style and conventions
 
 We try to follow our [Android style guide](https://github.com/xmartlabs/Android-Style-Guide). Following it is not strictly necessary to contribute and to have a pull request accepted but project maintainers try to follow it. We would love to hear your ideas to improve our code style and conventions. Feel free to contribute.
 

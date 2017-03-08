@@ -37,11 +37,11 @@ As with any other Jenkins plugin, maven 3 is a requirement. [Install instruction
 
 Before contribute check the [CONTRIBUTING](CONTRIBUTING.md) file for more info.
 
-If you use **BuildSlackNotifier** in your app We would love to hear about it! Drop us a line on [twitter](https://twitter.com/xmartlabs).
+If you use **BuildSlackNotifier** we would love to hear about it! Drop us a line on [twitter](https://twitter.com/xmartlabs).
 
 ## Author
 
-* [Diego Medina](https://github.com/xmartlabs)
+* [Diego Medina](https://github.com/diegomedina248)
 
 # Change Log
 
