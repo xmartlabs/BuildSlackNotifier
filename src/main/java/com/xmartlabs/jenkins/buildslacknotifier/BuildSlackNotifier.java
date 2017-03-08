@@ -84,7 +84,6 @@ public class BuildSlackNotifier extends Recorder {
 
   @Extension
   public static final class DescriptorImpl extends BuildStepDescriptor<Publisher> {
-
     public DescriptorImpl() {
       load();
     }

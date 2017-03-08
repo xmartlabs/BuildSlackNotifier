@@ -16,12 +16,12 @@ public class Attachment {
   private static final String GIT_COMMIT = "GIT_COMMIT";
   private static final String FOOTER_TEXT = "Jenkins Build Slack Notifier";
 
-  public AttachmentType color;
-  public String title;
-  public String titleLink;
-  public String text;
-  public List<AttachmentField> fields;
-  public String footer;
+  private AttachmentType color;
+  private String title;
+  private String titleLink;
+  private String text;
+  private List<AttachmentField> fields;
+  private String footer;
 
   public static Attachment build(EnvVars envVars, Result result) {
     Attachment attachment = new Attachment();

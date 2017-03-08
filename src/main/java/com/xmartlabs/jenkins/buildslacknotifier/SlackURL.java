@@ -6,7 +6,7 @@ import org.kohsuke.stapler.DataBoundConstructor;
  * Created by diegomedina24 on 11/25/16.
  */
 public class SlackURL {
-  String url;
+  private String url;
 
   @DataBoundConstructor
   public SlackURL(String url) {
