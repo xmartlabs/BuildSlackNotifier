@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:entry>
+    <f:repeatable name="urls" var="slackUrl" items="${instance.urls}" minimum="0" noAddButton="false">
+      <table width="100%">
+        <f:entry title="Slack URL">
+          <f:textbox name="url" default="${slackUrl.url}" />
+        </f:entry>
+      </table>
+    </f:repeatable>
+  </f:entry>
+</j:jelly>
