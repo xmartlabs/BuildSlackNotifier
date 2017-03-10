@@ -49,7 +49,8 @@ public final class BuildSlackNotifier extends Recorder {
   public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener) {
     for (SlackURL url : urls) {
       try {
-          sendNotificationToSlack(build, listener, url.getUrl());
+        sendNotificationToSlack(build, listener, url.getUrl());
+        listener.getLogger().println("[SUCCESS]: Slack notification sent to: " + url.getUrl());
       } catch (Exception ex) {
         listener.getLogger().println("[ERROR]: Could not send Slack notification");
       }
