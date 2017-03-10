@@ -8,7 +8,7 @@ import com.xmartlabs.jenkins.buildslacknotifier.helper.ResultHelper;
 import hudson.EnvVars;
 import hudson.model.Result;
 
-public class Attachment {
+public final class Attachment {
   private static final String BUILD_NUMBER = "BUILD_NUMBER";
   private static final String BUILD_URL = "BUILD_URL";
   private static final String JOB_NAME = "JOB_NAME";

@@ -33,8 +33,8 @@ import com.xmartlabs.jenkins.buildslacknotifier.request.Request;
 
 import org.kohsuke.stapler.QueryParameter;
 
-public class BuildSlackNotifier extends Recorder {
-  private List<SlackURL> urls = new ArrayList<>();
+public final class BuildSlackNotifier extends Recorder {
+  private final List<SlackURL> urls;
 
   @DataBoundConstructor
   public BuildSlackNotifier(ArrayList<SlackURL> urls) {
@@ -47,12 +47,12 @@ public class BuildSlackNotifier extends Recorder {
 
   @Override
   public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener) {
-    try {
-      for (SlackURL url : urls) {
-        sendNotificationToSlack(build, listener, url.getUrl());
+    for (SlackURL url : urls) {
+      try {
+          sendNotificationToSlack(build, listener, url.getUrl());
+      } catch (Exception ex) {
+        listener.getLogger().println("[ERROR]: Could not send Slack notification");
       }
-    } catch (Exception ex) {
-      listener.getLogger().println("[ERROR]: Could not send Slack notification");
     }
 
     return true;
@@ -97,8 +97,8 @@ public class BuildSlackNotifier extends Recorder {
     }
 
     @Override
-    public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
-      req.bindJSON(this, formData);
+    public boolean configure(StaplerRequest request, JSONObject formData) throws FormException {
+      request.bindJSON(this, formData);
       save();
       return true;
     }
